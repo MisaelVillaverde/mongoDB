@@ -1,0 +1,60 @@
+[
+  {
+    "_id": {
+      "$oid": "5e514cf57961a576fa5ff905"
+    },
+    "price": {
+      "$numberInt": "100"
+    },
+    "name": "keyboard"
+  },
+  {
+    "_id": {
+      "$oid": "5e514d457961a576fa5ff906"
+    },
+    "price": {
+      "$numberInt": "1000"
+    },
+    "description": "lg gram laptop",
+    "name": "laptop"
+  },
+  {
+    "_id": {
+      "$oid": "5e514e157961a576fa5ff907"
+    },
+    "description": "razer mouse",
+    "tags": ["computers", "gaming"],
+    "quantity": {
+      "$numberInt": "14"
+    },
+    "created_at": {
+      "$date": {
+        "$numberLong": "1582386709527"
+      }
+    },
+    "name": "mouse"
+  },
+  {
+    "_id": {
+      "$oid": "5e514e157961a576fa5ff908"
+    },
+    "description": "lg monitor",
+    "tags": ["computers", "gaming"],
+    "quantity": {
+      "$numberInt": "3"
+    },
+    "created_at": {
+      "$date": {
+        "$numberLong": "1582386709527"
+      }
+    },
+    "name": "monitor"
+  },
+  {
+    "_id": {
+      "$oid": "5e5166f4d11b36b87eef1661"
+    },
+    "description": "Gaming Desktop",
+    "name": "desktop"
+  }
+]
