@@ -153,7 +153,7 @@ db.products.find().forEach(product => print("Product Price: " + product.price))
 ```js
 db.products.update({"name": "keyboard"}, {"name": "keyboard", "price": "99.99"})
 ```
->El primer argumento es de búsqueda, se encuentra el propiedad con el nombre keyboard. El segundo argumento es de reemplazo o de adición en caso de que no exista el propiedad. En este caso lo que se hace es q modifica el objeto por completo, por eso se pone *name: "keyboard"* nuevamente, si no queremos modificarlo por completo existe $set.
+>El primer argumento es de búsqueda, se encuentra la propiedad con el nombre keyboard. El segundo argumento es de reemplazo o de adición en caso de que no exista la propiedad. En este caso lo que se hace es q modifica el objeto por completo, por eso se pone *name: "keyboard"* nuevamente, si no queremos modificarlo por completo existe $set.
 
 
 
@@ -162,7 +162,7 @@ db.products.update({"name": "keyboard"}, {"name": "keyboard", "price": "99.99"})
 ```js
 db.products.update({"name": "laptop"}, {$set: {"description": "lg gram laptop"}})
 ```
->_$set_ es usado para indicar que se va a agregar un nuevo propiedad, y es útil para no reemplazar todos los datos previos.
+>_$set_ es usado para indicar que se va a agregar una nueva propiedad, y es útil para no reemplazar todos los datos previos.
 
 
 
@@ -171,7 +171,7 @@ db.products.update({"name": "laptop"}, {$set: {"description": "lg gram laptop"}}
 ```js
 db.products.update({name: "desktop"}, {$set: {"description": "Gaming Desktop"}}, {upsert: true})
 ```
->_upsert_ es usado para insertar un dato aunque no encuentre ninguna coincidencia.
+>_upsert_ es usado para insertar una propiedad aunque no encuentre ningun documento con la condición. 
 
 
 
